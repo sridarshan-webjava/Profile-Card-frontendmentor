@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  --clr-body-bg: hsl(185, 75%, 39%);
+
+  --clr-card-bg: #ffffff;
+
+  --clr-accent-primary: hsl(229, 23%, 23%);
+  --clr-accent-secondary: hsl(227, 10%, 46%);
+  --clr-base: hsl(0, 0%, 59%);
+
+  --clr-line: #eaeaea;
+
+  --ff: "Kumbh Sans", sans-serif;
+
+  --fw-base: 400;
+  --fw-bold: 700;
+
+  --fs: 1.125rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("images/bg-pattern-top.svg") right 52.5vw bottom 40vh
+      no-repeat,
+    url("images/bg-pattern-bottom.svg") 50vw 50vh no-repeat, var(--clr-body-bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--ff);
+  font-weight: var(--fw-base);
+  font-size: var(--fs);
+  color: var(--clr-base);
+}
+
+hr {
+  border: 1px solid;
+  color: var(--clr-line);
+}
+
+.card {
+  width: 22rem;
+  height: 24rem;
+  background: var(--clr-card-bg);
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 0 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+.card .name,
+.card .count {
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent-primary);
+}
+
+.card .age,
+.card .location {
+  color: var(--clr-accent-secondary);
+}
+
+.card .bg-container {
+  height: 8.75rem;
+  background: url("images/bg-pattern-card.svg") center center;
+}
+
+.card .user-info {
+  height: 9.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card .user-img {
+  width: 6.25rem;
+  height: 6.25rem;
+  border: 4px solid var(--clr-card-bg);
+  border-radius: 100%;
+  position: relative;
+  top: -31%;
+  margin-bottom: -5.5%;
+}
+
+.card .user-description {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.55em;
+}
+
+.card .name {
+  margin-right: 0.5em;
+}
+
+.card .location {
+  font-size: 1.025rem;
+}
+
+.card .stats {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.5em 1em 1.5em 0.75em;
+  text-align: center;
+}
+
+.card .count {
+  margin-bottom: 0.5em;
+}
+
+.card .stat-description {
+  font-size: 0.85rem;
+  opacity: 0.75;
+  letter-spacing: 1px;
+}
